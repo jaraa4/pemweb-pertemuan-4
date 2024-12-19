@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form pemesanan pizza</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>form pesan pizza</legend>
+      
+      <h1>selamat datang di domino's pizza</h1>
+      <p>silahkan isi pesanan anda disni</p>
+      
+      <form action="mks.html">
+        <table>
+          <thead>
+            <tr>
+              <td>informasi anda</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td><label for="nama">nama :</label></td>
+            <td><input type="text" id="nama" name="nama"required></td>
+            </tr>
+                        <tr>
+            <td><label for="alamat">alamat :</label></td>
+            <td><input type="text" id="alamat" name="alamat"required></td>
+</tr>
+                        <tr>
+            <td><label for="notelp">no.telepon :</label></td>
+            <td><input type="number" id="notelp" name="notelp"required></td>
+</tr>
+                        <tr>
+            <td><label for="email">email :</label></td>
+            <td><input type="email" id="email" name="email"required></td>
+</tr>
+                        <tr>
+            <td><label for="note">notes pesanan :</label></td>
+            <td><textarea name="note" id="note" name="note"required placeholder="tidak lebih dari 400 karakter"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h4>pilih salah satu</h4>
+       <label for="crust">crust (choose one)</label><br>
+        <input type="radio" id="crust" name="crust" value="cs">
+        <label for="cs">classic white</label><br>
+                <input type="radio" id="crust" name="crust" valu="mg">
+        <label for="cs">multigrain</label><br>
+         <input type="radio" id="crust" name="crust" value="cf">
+        <label for="cs">cheese stufed</label><br>
+                 <input type="radio" id="crust" name="crust" value="gf">
+        <label for="cs">gulteen free</label><br>
+        
+        <label for="">topping (pilih lebih dari 1)</label><br>
+        
+        <input type="checkbox" id="" name="topping" value="rs">red souce<br>
+        <input type="checkbox" id="" name="topping" value="rs">mozarella<br>
+        <input type="checkbox" id="" name="topping" value="rs">beef <br>
+        <input type="checkbox" id="" name="topping" value="rs">paperoni <br>
+        
+        <h4>number</h4>
+        <label for="">pesan pizza</label>
+        <input type="number" min="1" max="10">
+        <br></br>
+        
+        <button type="submit" value="pesan">pesan sekarang</button>
+                <button type="reset" value="reset">reset</button>
+    </fieldset>
+  </body>
+  </html>
